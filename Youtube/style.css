@@ -1,0 +1,46 @@
+:root {
+    --text-color: white;
+    --background-color: black;
+    --youtube-color: red;
+    --icon-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.bar {
+    background: var(--background-color);
+    color: var(--icon-color);
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.fa-youtube {
+    color: var(--youtube-color);
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.name {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.fa-magnifying-glass {
+    margin-left: auto;
+    padding-right: 7px;
+    font-size: 15px;
+}
+
+.fa-ellipsis-vertical {
+    padding-right: 5px;
+    font-size: 15px;
+}
