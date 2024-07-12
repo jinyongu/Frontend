@@ -3,6 +3,8 @@
     --background-color: black;
     --youtube-color: red;
     --icon-color: white;
+    --tag-color: blue;
+    --small-color: gray;
 }
 
 body {
@@ -43,4 +45,137 @@ a {
 .fa-ellipsis-vertical {
     padding-right: 5px;
     font-size: 15px;
+}
+
+.player {
+    height: 50vh;
+    background: white;
+}
+
+.player video {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    border-right: 1px solid;
+}
+
+.info a {
+    color: var(--tag-color);
+}
+
+.tag_list {
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.tag_list li {
+    font-size: 10px;
+    padding: 3px 3px;
+}
+
+.main_title {
+    padding-left: 10px;
+}
+
+.upload_info {
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.upload_info li {
+    font-size: 10px;
+    padding: 3px 3px;
+}
+
+.section_icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.good {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.good i:hover {
+    color: blue;
+}
+
+.bad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bad i:hover {
+    color: red;
+}
+
+.share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.save {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_info {
+    display: flex;
+    width: 50vw;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.profile {
+    border-radius: 70%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+
+.ch_name {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 7px;
+    font-size: 15px;
+}
+
+.ch_name small{
+    font-size: 9px;
+    color: var(--small-color);
+}
+
+.my_info a{
+    color: black;
+    margin-left: auto;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.my_info a:hover {
+    color: var(--youtube-color);
 }
