@@ -5,6 +5,7 @@
     --icon-color: white;
     --tag-color: blue;
     --small-color: gray;
+    --content-color: black;
 }
 
 body {
@@ -57,12 +58,17 @@ a {
     height: 100%;
 }
 
+.content {
+    display: flex;
+}
+
 .info {
     display: flex;
     width: 50vw;
     height: 100vh;
     flex-direction: column;
     border-right: 1px solid;
+    float: left;
 }
 
 .info a {
@@ -102,7 +108,7 @@ a {
     padding-left: 0;
 }
 
-.good {
+.good, .bad, .share, .save, .report {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,32 +118,13 @@ a {
     color: blue;
 }
 
-.bad {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .bad i:hover {
     color: red;
 }
 
-.share {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.save {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.report {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.share i:hover, .save i:hover, .report i:hover {
+    transform: scale(1.3);
+    transition-duration: 0.5s;
 }
 
 .my_info {
@@ -178,4 +165,80 @@ a {
 
 .my_info a:hover {
     color: var(--youtube-color);
+}
+
+.video_list {
+    width: 50vw;
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.video_list img {
+    width: 20vw;
+    height: 13vh;
+}
+
+.video_list div {
+    display: flex;
+}
+
+.next {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    color: var(--small-color);
+}
+
+.video_list ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.video_list a {
+    color: var(--content-color);
+}
+
+.uploader, .view {
+    font-size: 10px;
+    color: var(--small-color);
+}
+
+.sunghae, .love, .taekhun {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.video_list i{
+    position: absolute;
+    right: 0;
+    top: 4px;
+    font-size: 12px;
+}
+
+.video_list i:hover {
+    transform: scale(1.3);
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 514px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        height: 50%;
+        border: none;
+    }
+
+    .my_info {
+        width: 100%;
+    }   
+
+    .video_list {
+        width: 95%;
+    }
 }
