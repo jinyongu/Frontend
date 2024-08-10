@@ -1,0 +1,53 @@
+.hidden {
+    display: none;
+}
+
+body {
+    height: 700px;
+    background-image: url("/Clone_Coding/Momentum/img/0.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form input{
+    font-size: 30px;
+    color: #222222;
+    width: 450px;
+    border: none;
+    border-bottom: solid #222222 1px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: none;
+    z-index: 5;
+}
+
+#login-form input:focus {
+    outline: none;
+}
+
+#clock {
+    margin: 0;
+    font-size: 60px;
+}
+
+#greeting {
+    margin: 0;
+    font-size: 25px;
+}
+
+#quote {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
