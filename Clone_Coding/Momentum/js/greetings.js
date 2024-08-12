@@ -1,8 +1,10 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-const question = document.querySelector("#question");
+const question = document.querySelector("#id-question");
 const quoteClass = document.querySelector("#quote")
+const todoQuestion = document.querySelector("#todo-question");
+const main = document.querySelector("main");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -12,7 +14,9 @@ function onLoginSubmit(event) {
     clock.classList.remove(HIDDEN_CLASSNAME);
     question.classList.add(HIDDEN_CLASSNAME);
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    todoQuestion.classList.remove(HIDDEN_CLASSNAME);
     quoteClass.style.display = "flex";
+    main.style.marginTop = "200px";
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     paintGreetings(username);
@@ -32,7 +36,7 @@ function paintGreetings(username) {
     } else if (0 <= hours && hours < 6) {
         sayGreeting = `Good Night, ${username}`;
     }
-    greeting.innerText =sayGreeting;
+    greeting.innerText = sayGreeting;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -44,6 +48,8 @@ if (savedUsername === null) {
 } else {
     question.classList.add(HIDDEN_CLASSNAME);
     clock.classList.remove(HIDDEN_CLASSNAME);
+    todoQuestion.classList.remove(HIDDEN_CLASSNAME);
+    main.style.marginTop = "200px";
     quoteClass.style.display = "flex";
     paintGreetings(savedUsername);
 }

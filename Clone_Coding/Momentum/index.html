@@ -8,27 +8,38 @@
     <script src="js/clock.js" defer></script>
     <script src="js/quotes.js" defer></script>
     <script src="js/todo.js" defer></script>
+    <script src="js/mainTodo.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
     </header>
     <main>
-      <h1 id="question">
-        Hello, What's your name?
-      </h1>
-      <form class="hidden" id="login-form">
-        <input
-          required
-          maxlength="15"
-          type="text"
-        />
-      </form>
-      <h2 class="hidden" id="clock">00:00</h2>
+      <div id="id-question">
+        <h1>
+          Hello, What's your name?
+        </h1>
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+          />
+        </form>
+      </div>
+      <h2 id="clock" class="hidden">00:00</h2>
       <h1 id="greeting" class="hidden"></h1>
-      <form id="todo-form" class="hidden">
-        <input type="text" placeholder="What is your r" required>
-      </form>
+      <div id="todo-question" class="hidden">
+        <h2>What is your main focus for today?</h2>
+        <form id="todo-form">
+          <input type="text" required>
+        </form>
+        <div id="main-todo">
+          <input type="checkbox" id="todo-check">
+          <h3>hello</h3>
+          <button>x</button>
+        </div>
+      </div>
       <ul id="todo-list"></ul>
     </main>
     <footer>

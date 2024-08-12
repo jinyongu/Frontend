@@ -15,11 +15,16 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    margin-top: 0px;
 }
 
-#login-form input{
+#id-question {
+    text-align: center;
+}
+
+#login-form input, #todo-form input{
     font-size: 30px;
     color: #222222;
     width: 450px;
@@ -31,7 +36,7 @@ main {
     z-index: 5;
 }
 
-#login-form input:focus {
+#login-form input:focus, #todo-form input:focus {
     outline: none;
 }
 
@@ -42,7 +47,34 @@ main {
 
 #greeting {
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+#todo-question {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#main-todo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-todo input {
+    height: 15px;
+    width: 15px;
+    background: transparent;
+}
+
+#main-todo h3 {
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+#main-todo button {
+    height: 20px;
+    width: 20px;
 }
 
 #quote {
