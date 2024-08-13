@@ -16,7 +16,7 @@ function onLoginSubmit(event) {
     loginForm.classList.add(HIDDEN_CLASSNAME);
     todoQuestion.classList.remove(HIDDEN_CLASSNAME);
     quoteClass.style.display = "flex";
-    main.style.marginTop = "200px";
+    main.style.marginTop = "100px";
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     paintGreetings(username);
@@ -25,7 +25,6 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
     const date = new Date();
     hours = date.getHours();
-    console.log(hours);
     let sayGreeting;
     if (6 <= hours && hours < 12) {
         sayGreeting = `Good Morning, ${username}`;
@@ -49,7 +48,7 @@ if (savedUsername === null) {
     question.classList.add(HIDDEN_CLASSNAME);
     clock.classList.remove(HIDDEN_CLASSNAME);
     todoQuestion.classList.remove(HIDDEN_CLASSNAME);
-    main.style.marginTop = "200px";
+    main.style.marginTop = "100px";
     quoteClass.style.display = "flex";
     paintGreetings(savedUsername);
 }

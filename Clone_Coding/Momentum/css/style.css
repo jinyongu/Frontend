@@ -12,6 +12,139 @@ body {
     justify-content: space-between;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+
+#links:hover {
+    color: rgb(56, 63, 53);
+}
+
+#links a {
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    color: rgb(56, 56, 53);
+}
+
+#add-links-frame {
+    position: absolute;
+    top: 55px;
+    left: 15px;
+}
+
+#add-links-frame i {
+    color: rgb(109, 106, 106);
+    padding: 0 15px;
+}
+
+#add-links{
+    background-color: rgb(109, 106, 106);
+    width: 350px;
+    height: 135px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#add-option, #creating-link {
+    padding: 10px 0;
+    margin: 0 8px;
+    text-align: right;
+}
+
+#add-option i {
+    color: white;
+    padding: 10px 8px;
+    border-radius: 20px;
+}
+
+#add-option i:hover {
+    background-color: rgb(109, 115, 106);
+}
+
+#add-links ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.links-item {
+    padding: 20px 20px;
+
+}
+
+.links-item:hover {
+    background-color: rgb(109, 115, 106);
+}
+
+.links-item a {
+    text-decoration: none;
+    color: white;
+}
+
+#creating-link {
+    color: rgb(222, 221, 221);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#creating-link p {
+    margin: 0px 70px;
+}
+
+#creating-link i {
+    color: rgb(222, 221, 221);
+    border-radius: 10px;
+}
+
+#creating-link i:hover {
+    background-color: rgb(109, 115, 106);
+}
+
+#create-form, #link-address {
+    margin: 5px 20px;
+}
+
+#create-form h4, #link-address h4{
+    color: rgb(222, 221, 221);
+    margin: 5px 0;
+}
+
+#create-form input, #link-address input {
+    font-size: 12px;
+    width: 300px;
+    text-align: left;
+    color: rgb(222, 221, 221);
+    border-bottom: solid rgb(222, 221, 221) 1px;
+    margin-bottom: 25px;
+}
+
+#create-form input:focus, #link-address input:focus {
+    border-bottom: solid rgb(222, 221, 221) 2px;
+}
+
+#add-button {
+    text-align: center;
+}
+
+#add-button button {
+    height: 40px;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(39, 192, 39);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -24,7 +157,7 @@ main {
     text-align: center;
 }
 
-#login-form input, #todo-form input{
+input {
     font-size: 30px;
     color: #222222;
     width: 450px;
@@ -36,7 +169,7 @@ main {
     z-index: 5;
 }
 
-#login-form input:focus, #todo-form input:focus {
+input:focus {
     outline: none;
 }
 

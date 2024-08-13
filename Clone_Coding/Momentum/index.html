@@ -4,27 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum App</title>
+    <script
+      src="https://kit.fontawesome.com/e3e9c3c375.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="js/greetings.js" defer></script>
     <script src="js/clock.js" defer></script>
     <script src="js/quotes.js" defer></script>
     <script src="js/todo.js" defer></script>
     <script src="js/mainTodo.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="js/links.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
+      <div id="links">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <a href="#">Links</a>
+      </div>
+      <div id="add-links-frame" class="hidden">
+        <i class="fa-solid fa-caret-up"></i>
+        <div id="add-links">
+          <nav id="add-option">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+          </nav>
+          <ul id="links-list">
+            <li class="links-item">
+              <a href="index.html">Chrome Tab</a>
+            </li>
+          </ul>
+
+          <nav id="creating-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Creating a link</p>
+          </nav>
+
+          <div id="add" class="hidden">
+            <form id="create-form">
+              <h4>Title</h4>
+              <input type="text" required>
+            </form>
+            
+            <form id="link-address">
+              <h4>Links</h4>
+              <input type="text" required>
+            </form>
+            
+            <form id="add-button">
+              <button>Add</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div id="weather"></div>
     </header>
     <main>
       <div id="id-question">
-        <h1>
-          Hello, What's your name?
-        </h1>
+        <h1>Hello, What's your name?</h1>
         <form class="hidden" id="login-form">
-          <input
-            required
-            maxlength="15"
-            type="text"
-          />
+          <input required maxlength="15" type="text" />
         </form>
       </div>
       <h2 id="clock" class="hidden">00:00</h2>
@@ -32,10 +73,10 @@
       <div id="todo-question" class="hidden">
         <h2>What is your main focus for today?</h2>
         <form id="todo-form">
-          <input type="text" required>
+          <input type="text" required />
         </form>
         <div id="main-todo">
-          <input type="checkbox" id="todo-check">
+          <input type="checkbox" id="todo-check" />
           <h3>hello</h3>
           <button>x</button>
         </div>
