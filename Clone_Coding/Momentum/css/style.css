@@ -46,7 +46,7 @@ header {
     padding: 0 15px;
 }
 
-#add-links{
+#add-links {
     background-color: rgb(109, 106, 106);
     width: 350px;
     height: 135px;
@@ -74,6 +74,11 @@ header {
     margin: 0;
     list-style: none;
     padding: 0;
+}
+
+#add-links li {
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .links-item {

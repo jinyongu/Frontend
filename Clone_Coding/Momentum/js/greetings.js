@@ -5,6 +5,8 @@ const question = document.querySelector("#id-question");
 const quoteClass = document.querySelector("#quote")
 const todoQuestion = document.querySelector("#todo-question");
 const main = document.querySelector("main");
+const header = document.querySelector("header");
+const body = document.querySelector("body");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -17,6 +19,8 @@ function onLoginSubmit(event) {
     todoQuestion.classList.remove(HIDDEN_CLASSNAME);
     quoteClass.style.display = "flex";
     main.style.marginTop = "100px";
+    header.style.display = "flex";
+    body.style.justifyContent = "space-between";
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     paintGreetings(username);
@@ -43,6 +47,8 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
+    header.style.display = "none";
+    body.style.justifyContent = "center";
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     question.classList.add(HIDDEN_CLASSNAME);
@@ -50,5 +56,7 @@ if (savedUsername === null) {
     todoQuestion.classList.remove(HIDDEN_CLASSNAME);
     main.style.marginTop = "100px";
     quoteClass.style.display = "flex";
+    header.style.display = "flex";
+    body.style.justifyContent = "space-between";
     paintGreetings(savedUsername);
 }
