@@ -25,7 +25,7 @@ header {
 }
 
 #links:hover {
-    color: rgb(56, 63, 53);
+    color: rgb(84, 88, 82);
 }
 
 #links a {
@@ -222,9 +222,92 @@ input:focus {
     width: 20px;
 }
 
+footer {
+    position: relative;
+}
+
 #quote {
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#sub-todo {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 19px;
+}
+
+#sub-todo a {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+
+#sub-todo:hover {
+    color: rgb(51, 53, 50);
+}
+
+#add-todo-frame {
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+    text-align: right;
+}
+
+#add-todo-frame i {
+    color: rgb(22, 22, 22);
+    padding: 0 15px;
+}
+
+#add-todo {
+    background-color: rgb(22, 22, 22);
+    width: 350px;
+    height: 115px;
+    border-radius: 8px;
+    color: rgb(239, 239, 239);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#add-todo p {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#add-todo input {
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    padding: none;
+    text-align: left;
+    margin-left: 10px;
+    color: rgb(192, 192, 192);
+}
+
+#sub-todo-items {
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#sub-todo-items li {
+    padding: 3px 0;
+}
+
+#sub-todo-items input{
+    width: 12px;
+    height: 12px;
+}
+
+#sub-todo-items span {
+    margin-left: 5px;
 }
