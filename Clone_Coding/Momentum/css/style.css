@@ -83,7 +83,7 @@ header {
 
 .links-item {
     padding: 20px 20px;
-
+    display: flex;
 }
 
 .links-item:hover {
@@ -93,6 +93,17 @@ header {
 .links-item a {
     text-decoration: none;
     color: white;
+}
+
+.links-item button {
+    background-color: transparent;
+    border: 0;
+    margin-left: auto;
+    color: white;
+}
+
+.links-item button:hover {
+    color: rgb(215, 213, 213);
 }
 
 #creating-link {
@@ -209,7 +220,7 @@ input:focus {
 #main-todo input {
     height: 15px;
     width: 15px;
-    background: transparent;
+    background-color: transparent;
 }
 
 #main-todo h3 {
@@ -220,6 +231,10 @@ input:focus {
 #main-todo button {
     height: 20px;
     width: 20px;
+    font-size: 30px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    border: 0;
 }
 
 footer {
@@ -300,7 +315,14 @@ footer {
 }
 
 #sub-todo-items li {
+    display: flex;
+    align-items: center;
     padding: 3px 0;
+    border-radius: 8px;
+}
+
+#sub-todo-items li:hover {
+    background-color: rgb(28, 28, 28);
 }
 
 #sub-todo-items input{
@@ -310,4 +332,16 @@ footer {
 
 #sub-todo-items span {
     margin-left: 5px;
+}
+
+#sub-todo-items button {
+    border: 0;
+    background-color: transparent;
+    color: rgb(239, 239, 239);
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+#sub-todo-items button:hover {
+    color: rgb(192, 192, 192);
 }

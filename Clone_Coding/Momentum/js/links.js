@@ -40,7 +40,11 @@ function addLink() {
     a.target = "_black";
     a.rel = "noopener noreferrer";
     a.innerText = title;
+    const deleteLinkButton = document.createElement("button");
+    deleteLinkButton.innerText = "X";
+    deleteLinkButton.addEventListener("click", deleteLink);
     li.appendChild(a);
+    li.appendChild(deleteLinkButton);
     addLinkList.appendChild(li);
     linkNum++;
 }
@@ -107,9 +111,17 @@ linkIcon.addEventListener('click', toggleProfile);
 
 
 function handleClickOutside(event) {
-    if (isProfileOpen && !addLinkFrame.contains(event.target)) {
+    if (isProfileOpen && event.target.innerText !== "X" && !addLinkFrame.contains(event.target)) {
         closeProfile();
     }
 }
 
 document.addEventListener("click", handleClickOutside);
+
+
+function deleteLink(event) {
+    const targetLink= event.target.parentElement;
+    targetLink.remove();
+    linkNum--;
+    addLinks.style.height = `${135 + (65*linkNum)}px`;
+}
