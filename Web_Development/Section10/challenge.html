@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Challenge</title>
+    <link rel="stylesheet" href="css/challege-styles.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form action="challenge.html" method="GET">
+      <section>
+        <h2>How can we help you?</h2>
+        <ul>
+          <li>
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="username" required />
+          </li>
+          <li>
+            <label for="useremail">Your E-Mail Address</label>
+            <input type="email" name="user-email" id="useremail" required />
+          </li>
+          <li>
+            <label for="userphone">Your Phone Number</label>
+            <input type="text" name="user-phone" id="userphone" required />
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <label for="usermessage">Your Message</label>
+        <textarea name="user-message" id="usermessage" rows="5"></textarea>
+      </section>
+
+      <section>
+        <label for="findmethod">How did you find us?</label>
+        <select name="find-method" id="findmethod">
+          <option value="web">Web Search</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </section>
+
+      <section id="radio-input">
+        <h2>How Should we reply?</h2>
+        <ul>
+          <li class="inline-type">
+            <input type="radio" name="verify" id="call-me"required />
+            <label for="call-me">Call me</label>
+          </li>
+          <li class="inline-type">
+            <input type="radio" name="verify" id="send-email" required />
+            <label for="send-email">Send me an email</label>
+          </li>
+          <li class="inline-type">
+            <input type="radio" name="verify" id="no-reply" required />
+            <label for="no-reply">Don't reply</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="inline-type">
+          <input type="checkbox" name="accept" id="accept-terms" required />
+          <label for="accept-terms">Accept Terms</label>
+        </div>
+      </section>
+
+      <section>
+        <ul id="buttons">
+          <li>
+            <button type="reset" id="reset-button">Clear</button>
+          </li>
+          <li>
+            <button id="submit-button">Submit</button>
+          </li>
+        </ul>
+      </section>
+    </form>
+  </body>
+</html>

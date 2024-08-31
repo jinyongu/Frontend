@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(212, 234, 247);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    width: 30rem;
+    background-color: rgb(221, 238, 244);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 4px;
+    margin-bottom: 0.35rem;
+    color: rgb(56, 56, 56);
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid rgb(17, 140, 240);
+    outline: none;
+    background-color: rgb(182, 218, 247);
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    font: bold;
+    margin-bottom: 0.3rem;
+}
+
+#radio-input {
+    margin-bottom: 1rem;
+}
+
+.inline-type {
+    display: flex;
+}
+
+.inline-type input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+#buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttons button {
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+}
+
+#reset-button {
+    margin-right: 0.3rem;
+    background: transparent;
+    border: 1px solid rgb(58, 58, 58);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#reset-button:hover {
+    background-color: rgb(122, 185, 237);
+}
+
+#submit-button {
+    color: rgb(222, 222, 222);
+    background-color: rgb(14, 14, 41);
+    box-shadow: 1px 1px 4px rgba(255, 255, 255, 1);
+}
+
+#submit-button:hover {
+    background-color: rgb(30, 30, 87);
+}
