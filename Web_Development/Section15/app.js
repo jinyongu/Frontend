@@ -3,7 +3,7 @@ const http = require("http");
 function handleRequest(request, response) {
   if (request.url === "/currenttime") {
     response.statusCode = 200; // 요청을 성공했는지 알림
-    response.end("<h1>" + new Date().toIsoString() + "</h1>"); // 보내야하는 내용
+    response.end("<h1>" + new Date().toISOString() + "</h1>"); // 보내야하는 내용
   } else if (request.url === "/") {
     response.statusCode = 200; // 요청을 성공했는지 알림
     response.end("<h1>Hello World!</h1>"); // 보내야하는 내용
